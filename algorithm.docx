@@ -1,1 +1,14 @@
-first we converted the word we want to check to lowercase
+
+Inside the Main class, there is a method called isPalindrome that takes a single argument, word, which is the word we want to check for being a palindrome.
+Convert to Lowercase: First, the method converts the input word to lowercase to make the palindrome check case-insensitive. This means that "Madam" and "madam" will be treated as the same.
+Initialize Pointers: Two pointers are initialized: left is set to the beginning of the word (index 0) and right is set to the end of the word (index word.length() - 1).
+
+The method then enters a while loop that continues as long as the left pointer is less than the right pointer.
+Character Comparison: Inside the loop, the characters at the left and right positions are compared. If they are not equal, it means the word is not a palindrome.
+If a mismatch is found, it prints that the word is not a palindrome and exits the method using return.
+Move Pointers: If the characters match, the left pointer is incremented by 1 and the right pointer is decremented by 1, moving both pointers towards the center of the word.
+
+If the loop completes without finding any mismatches, it means all characters matched symmetrically. In this case, the method prints that the word is a palindrome.
+
+The main method is the entry point of the program. Here, an instance of the Main class is created and the isPalindrome method is called with the word "madam".
+Output: The method will output whether "madam" is a palindrome or not.
